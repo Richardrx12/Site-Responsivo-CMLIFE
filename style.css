@@ -1,0 +1,335 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Source+Sans+Pro:ital;
+}
+
+/* container do topo */
+header {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: rgb(236, 179, 35);
+    padding-bottom: auto;
+
+}
+
+/*  container com as duas divs */
+.topo {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+
+}
+
+.topo figure {
+
+    width:30%;
+    height: 30%;
+    padding: 0.2%;  
+}
+
+/* container com links de navegação */
+nav {
+    padding: 0.2%;
+   
+}
+
+nav a{
+    
+    text-shadow: 0 0 1rem black;
+    padding-right: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+nav a:hover {
+    color:rgb(70, 56, 56);
+}
+
+/* container com a background img e o texto */
+#inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background {
+    display: flex;
+    background-image: url("assets/recepcao2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    max-width: 1024px;
+    height: 35vh;
+    font-size: 24px;
+    padding: 0 40px;
+    border-radius: 4px;
+    border: 1px solid rgb(53, 52, 49);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+}
+
+.text h1 {
+    padding-top: 6vh;
+    color: rgb(17, 16, 16);
+    text-shadow: 0.1em 0.1em 0.2em rgb(236, 204, 20);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text h2 {
+    color:rgb(17, 16, 16);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em rgb(236, 204, 20);
+}
+
+
+#sobre, #especialidades, #contato, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    
+}
+
+.descricao {
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   height: auto;
+   width: 100%;
+   padding: 15vh;
+   max-width: 1024px;
+   border-top: 2px solid rgb(255, 230, 0);
+   border-radius: 2vh;
+   
+}
+
+.descricao h1 {
+    padding: 3vh;
+}
+
+.container-meio {
+   display: flex;
+   width: 100%;
+   height: auto;
+   justify-content: center;
+   padding-bottom: 4vh;
+}
+
+.img-medico {
+    height: auto;
+}
+.lista{
+
+   padding-left: 10vh;
+   padding-top: 10vh;
+}
+.lista ul{
+    padding-top: 4vh;
+    line-height: 4vh;
+    
+}
+
+.descricao h2, .lista h2 {
+    padding-bottom: 2vh;
+    text-shadow: 0.1em 0.1em 0.2em rgb(238, 214, 4);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.descricao p,ul {
+    line-height: 5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-shadow: 0.1em 0.1em 0.2em rgb(148, 143, 143);
+
+}
+
+.imagens {
+    display: flex;
+    flex-flow: row nowrap;
+    height: auto;
+    width: calc("100% / 3");
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 1024px;
+    
+    
+}
+
+.imagens .img {
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2vh;
+}
+
+figcaption {
+
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+    margin: 15px;
+    background-color: rgb(236, 179, 35);
+}
+
+figcaption p {
+    padding-bottom: 2vh;
+    letter-spacing: 1vh;
+    color:rgb(255, 255, 255) ;
+    text-shadow: 0.1em 0.1em 0.2em rgb(0, 0, 0);
+    
+}
+
+figcaption:hover {
+    background-color: rgb(250, 238, 134);
+}
+
+.botao {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+
+}
+button {
+    padding: 3vh;
+    color:rgb(255, 255, 255);
+    background-color: rgb(236, 179, 35);
+    border: 0.4vh solid rgb(167, 145, 25);
+    border-radius: 10px;
+    text-shadow: 0.1em 0.1em 0.2em rgb(0, 0, 0);
+    box-shadow: 0 0 1rem rgb(0, 0, 0);
+    letter-spacing: 0.2vh;
+    font-weight: bold;
+
+}
+button:hover {
+    box-shadow: inset 0 0 1rem rgb(170, 131, 2);
+}
+
+.contato span {
+    font-size: 3.2vh;
+    color: rgb(228, 168, 17);
+    text-shadow: 0.1em 0.1em 0.2em rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.iframe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+    padding-bottom: 6vh;
+}
+
+footer {
+   flex-direction: column;
+   text-align: center;
+   background-color:rgb(255, 187, 15);
+}
+
+.logo {
+    height: 13vh;
+}
+
+.endereco p {
+    padding-bottom: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0.1em 0.1em 0.2em rgb(236, 230, 230);
+
+}
+
+@media (max-width: 425px){
+    
+    .topo {
+        
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    figure img {
+        width: 90%;
+    }
+
+    nav {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-top: 0.3px dotted rgb(170, 158, 158);
+        border-radius: 20px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+   .background {
+    padding-top: 100px;
+    height: 70vh;
+   }
+
+   .text {
+    font-size: 20px;
+   }
+
+   .descricao , .lista{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    font-size: 13px;
+    padding-bottom: 10px;
+    padding-top: 25px;
+   }
+
+   .imagens {
+        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+   }
+   .contato span {
+    font-size: 15px;
+   }
+
+   .endereco  {
+        font-size: 13px;
+        padding-bottom: 25px;
+        line-height: 8px;
+   }
+
+}
+
